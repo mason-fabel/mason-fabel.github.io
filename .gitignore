@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate - we actually want this for githup pages hosting
+#dist
