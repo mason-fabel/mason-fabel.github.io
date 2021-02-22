@@ -1,6 +1,7 @@
 <template>
 	<v-app>
-		<v-app-bar app dense flat>
+		<v-app-bar app dense flat
+			color="accent">
 			<v-toolbar-title>{{ title }}</v-toolbar-title>
 			<v-spacer></v-spacer>
 			<v-toolbar-items>
@@ -20,7 +21,8 @@
 			</v-container>
 		</v-main>
 
-		<v-footer app>
+		<v-footer app
+			color="secondary">
 			<v-btn text
 				v-for="link of socialLinks"
 				:key="link.title"
