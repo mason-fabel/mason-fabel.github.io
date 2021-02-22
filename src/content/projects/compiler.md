@@ -1,7 +1,10 @@
-# C- Compiler
-
-In this project, I did a lot of things
-
-You can learn more about it once I write more about it.
-
+---
+title: C- Compiler
+description: Creating a C- compiler using flex, bison, and C++
+tags:
+  - Computer Science
+  - C++
+  - Compiler
+  - University
+---
 [Github](https://github.com/mason-fabel/c-)

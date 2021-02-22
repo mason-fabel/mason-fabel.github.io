@@ -1,6 +1,9 @@
 <template>
 	<article>
+		<h1>{{ article.title }}</h1>
+		<p>{{ article.description }}</p>
 		<nuxt-content :document="article" />
+		<p>Posted on {{ formatDate(article.createdAt) }}</p>
 	</article>
 </template>
 
@@ -10,6 +13,16 @@
 			const article = await $content('projects', params.slug).fetch();
 
 			return { article }
-		}
+		},
+		methods: {
+			formatDate(date) {
+				return new Date(date)
+					.toLocaleDateString('en', {
+						year: 'numeric',
+						month: 'long',
+						day: 'numeric',
+					});
+			}
+		},
 	}
 </script>
