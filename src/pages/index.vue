@@ -1,7 +1,11 @@
 <template>
 	<v-app class="home-page">
-		<v-app-bar app>
-			<v-app-bar-title>Mason Fabel</v-app-bar-title>
+		<v-app-bar dense dark>
+			<v-toolbar-title>
+				Mason Fabel
+			</v-toolbar-title>
+			<v-navigation-drawer>
+			</v-navigation-drawer>
 		</v-app-bar>
 		<v-main>
 			<v-container>
@@ -11,7 +15,8 @@
 				<h2>Links</h2>
 				<ul>
 					<li><NuxtLink to="/about">About Me</NuxtLink></li>
-					<li><NuxtLink to="/js-test">Javascript Testing</NuxtLink></li>
+					<li><NuxtLink to="/projects">Projects</NuxtLink></li>
+					<li><NuxtLink to="/resume">Resume</NuxtLink></li>
 				</ul>
 			</v-container>
 		</v-main>
